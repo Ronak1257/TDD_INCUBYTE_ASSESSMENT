@@ -38,3 +38,21 @@ describe("4: Support different delimiters",()=>{
         expect(add("//:\n1:2:3:4")).toBe(10);
     });
 });
+
+describe("5: Negative numbers", () => {
+    test("Calling add with a single negative number throws an exception with that number", () => {
+        expect(() => { add("-1"); }).toThrow("negative numbers not allowed -1");
+    });
+
+    test("Calling add with multiple negative numbers throws an exception listing all negative numbers", () => {
+        expect(() => { add("-1,-2,-3"); }).toThrow("negative numbers not allowed -1,-2,-3");
+    });
+
+    test("Calling add with positive and negative numbers throws an exception listing only negative numbers", () => {
+        expect(() => { add("1,-2,3,-4"); }).toThrow("negative numbers not allowed -2,-4");
+    });
+
+    test("Calling add with no negative numbers does not throw an exception", () => {
+        expect(() => { add("1,2,3"); }).not.toThrow();
+    });
+});
