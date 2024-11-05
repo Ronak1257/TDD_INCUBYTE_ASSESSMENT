@@ -26,3 +26,15 @@ describe("3: Allow the add method to handle new lines between numbers (instead o
         expect(add("1\n2,3\n4")).toBe(10);
     });
 });
+
+describe("4: Support different delimiters",()=>{
+    test("add('//;\\n1;2') should return 3",()=>{
+        expect(add("//;\n1;2")).toBe(3);
+    });
+    test("add('//-\\n1-2-3') should return 6",()=>{
+        expect(add("//-\n1-2-3")).toBe(6);
+    });
+    test("add('//:\\n1:2:3:4') should return 10",()=>{
+        expect(add("//:\n1:2:3:4")).toBe(10);
+    });
+});
