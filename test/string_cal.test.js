@@ -11,3 +11,9 @@ describe("1: Create a simple string calculator",()=>{
         expect(add("1,5")).toBe(6);
     });
 });
+
+describe("2: Allow the add method to handle an unknown amount of numbers",()=>{
+    test("add('1,2,3,4,5') should return 15",()=>{
+        expect(add("1,2,3,4,5")).toBe(15);
+    });
+});
