@@ -6,8 +6,12 @@ function add(str){
         return parseInt(str);
     }
     else{
-        str=str.split(",");
-        return parseInt(str[0])+parseInt(str[1]);
+        let arr=str.split(",");
+        let sum=0;
+        for(let i=0;i<arr.length;i++){
+            sum+=parseInt(arr[i]);
+        }
+        return sum;
     }
 }
 
