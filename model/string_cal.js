@@ -6,8 +6,8 @@ function add(str){
         return parseInt(str);
     }
     else{
-        let arr=str.split(",");
         let sum=0;
+        let arr=str.split(/[\n,]/);
         for(let i=0;i<arr.length;i++){
             sum+=parseInt(arr[i]);
         }
