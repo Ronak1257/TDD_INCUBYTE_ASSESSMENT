@@ -5,6 +5,16 @@ function add(str){
     else if(str.length==1){
         return parseInt(str);
     }
+    else if(str[0]==='/' && str[1]==='/'){
+        let delimiter=str[2];
+        str=str.substring(4);
+        let numbers=str.split(delimiter);
+        let sum=0;
+        for(let i=0;i<numbers.length;i++){
+            sum+=parseInt(numbers[i]);
+        }
+        return sum;
+    }
     else{
         let sum=0;
         let arr=str.split(/[\n,]/);
