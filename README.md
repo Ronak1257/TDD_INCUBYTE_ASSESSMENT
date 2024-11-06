@@ -8,6 +8,14 @@ This project is a JavaScript-based solution to the "String Calculator TDD Kata,"
 - **Test Framework**: Jest
 - **IDE**: Visual Studio Code
 
+### ✅ Test Results
+
+All test cases have been successfully executed and passed, confirming that the `add` function meets all specified requirements. Please refer to the attached screenshot for a detailed view of the test outcomes.
+
+![image](https://github.com/user-attachments/assets/dca873d9-9886-434c-870c-3793c934f29b)
+
+---
+
 ### Commits Breakdown
 
 Each commit represents a crucial step in the TDD process, where tests are created before implementing functionality. Here’s a summary of each commit:
