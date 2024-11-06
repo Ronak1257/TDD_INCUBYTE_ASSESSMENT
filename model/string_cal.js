@@ -18,8 +18,16 @@ function add(str){
     if(str==="") return 0;
     else if(str.length==1) return parseInt(str);
     else if(str[0]==='/' && str[1]==='/'){
-        let delimiter=str[2];
-        str=str.substring(4);
+        let delimiter="";
+        let i=3;
+        if(str[2]==='['){
+            while(str[i]!==']'){
+                delimiter+=str[i];
+                i++;
+            }
+        }
+        else delimiter=str[2];
+        str=str.substring(i+1);
         let numbers=str.split(delimiter);
         return num_add(numbers);
     }
@@ -28,7 +36,5 @@ function add(str){
         return num_add(numbers);
     }
 }
-
-add("1001,2");
 
 module.exports=add;
