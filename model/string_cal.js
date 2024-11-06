@@ -31,9 +31,11 @@ function add(str){
             delimiter.push(str[i]);
             i++
         }
+
         str=str.substring(i+1);
         let delimiterRegex=new RegExp(delimiter.map(d=>d.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')).join("|"));
         let numbers=str.split(delimiterRegex);
+        
         return num_add(numbers);
     }
     else{
