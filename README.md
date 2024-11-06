@@ -86,6 +86,51 @@ Each commit represents a crucial step in the TDD process, where tests are create
 
 ---
 
+#### 🚀 Optimize the code for further integration
+- **Commit**: [Optimize code](https://github.com/Ronak1257/TDD_INCUBYTE_ASSESSMENT/commit/a70921784d076611ceb32deb9e6dc50ff53bbbe5)
+- **Description**: Optimize the code for further task complete in tdd kata-1 assessment
+
+---
+
+#### 🧪 Add Failing Test for Ignoring Numbers Greater Than 1000 - Task 6
+- **Commit**: [Add failing test to ignore numbers greater than 1000](https://github.com/Ronak1257/TDD_INCUBYTE_ASSESSMENT/commit/ac164a098bb76f0ccbfdd6fe3b1945eba4b99f04)
+- **Description**: Added tests to check that numbers larger than 1000 are ignored in the sum calculation.
+
+---
+
+#### ✅ Implement Logic to Ignore Numbers Greater Than 1000 - Task 6
+- **Commit**: [Implement logic to ignore numbers greater than 1000](https://github.com/Ronak1257/TDD_INCUBYTE_ASSESSMENT/commit/cbc2b7e1864527107f4e2ae3e19c3f8f60fc8342)
+- **Description**: Modified the `add` function to exclude numbers over 1000 from the sum, ensuring only valid numbers are counted.
+
+---
+
+#### 🧪 Add Failing Test for Delimiters of Any Length - Task 7
+- **Commit**: [Add failing test for multi-character delimiters](https://github.com/Ronak1257/TDD_INCUBYTE_ASSESSMENT/commit/a05b4724a9354616dbc0927b87e8368859a68f23)
+- **Description**: Added tests to support delimiters of arbitrary length, such as `***`.
+
+---
+
+#### ✅ Implement Logic for Multi-Character Delimiters - Task 7
+- **Commit**: [Implement logic for multi-character delimiters](https://github.com/Ronak1257/TDD_INCUBYTE_ASSESSMENT/commit/a05b4724a9354616dbc0927b87e8368859a68f23)
+- **Description**: Enhanced delimiter handling in `add` to allow delimiters of any length within square brackets.
+
+---
+
+#### 🧪 Add Failing Test for Multiple Delimiters - Task 8
+- **Commit**: [Add failing test for multiple delimiters](https://github.com/Ronak1257/TDD_INCUBYTE_ASSESSMENT/commit/0f60b42d3a1673bd9ef360061e45a8ca6c43673e)
+- **Description**: Created tests to validate the function’s behavior with multiple delimiters, such as `[*]` and `[%]`.
+
+---
+
+#### ✅ Implement Logic for Multiple Delimiters - Task 8
+- **Commit**: [Implement logic for multiple delimiters](https://github.com/Ronak1257/TDD_INCUBYTE_ASSESSMENT/commit/8b81c0defc843cbacab88896c470a2e36652b1f1)
+- **Description**: Updated the `add` function to support multiple custom delimiters, ensuring correct parsing and summing of numbers with any number of delimiters.
+
+---
+
+#### ✅ Implement Logic for Multi-Character Multiple Delimiters - Task 9
+- **Commit**: [Implement logic for multi-character multiple delimiters](https://github.com/Ronak1257/TDD_INCUBYTE_ASSESSMENT/commit/7f9cf4e3988caa249ac70d4d9707c522691855f8)
+
 ### Conclusion
 
 Through systematic TDD, each phase of the `String Calculator` functionality was designed, tested, and implemented. This approach:
