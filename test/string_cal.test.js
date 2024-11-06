@@ -78,7 +78,10 @@ describe("8: Allow multiple delimiters",()=>{
     test("add('//[*][%]\\n1*2%3') should return 6",()=>{
         expect(add("//[*][%]\n1*2%3")).toBe(6);
     });
-    test("add('//[***][&]\\n1***2&3***4') should return 10",()=>{
-        expect(add("//[***][&]\n1***2&3***4")).toBe(10);
+});
+
+describe("9: Delimiters with different lengths",()=>{
+    test("add('//[***][%]\\n1***2%3***4') should return 10",()=>{
+        expect(add("//[***][%]\n1***2%3***4")).toBe(10);
     });
 });
