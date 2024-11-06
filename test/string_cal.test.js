@@ -67,3 +67,9 @@ describe("6: Numbers bigger than 1000 should be ignored",()=>{
         expect(add("1000,2")).toBe(1002);
     });
 });
+
+describe("7: Delimiters can be of any length",()=>{
+    test("add('//[***]\\n1***2***3') should return 6",()=>{
+        expect(add("//[***]\n1***2***3")).toBe(6);
+    });
+});
