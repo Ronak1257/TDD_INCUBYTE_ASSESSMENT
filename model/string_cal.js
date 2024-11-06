@@ -5,6 +5,7 @@ function num_add(numbers){
         if(numbers[i][0]==="-"){
             negative.push(numbers[i]);
         }
+        else if(parseInt(numbers[i])>1000) continue;
         sum+=parseInt(numbers[i]);
     }
     if(negative.length>0){
@@ -27,5 +28,7 @@ function add(str){
         return num_add(numbers);
     }
 }
+
+add("1001,2");
 
 module.exports=add;
