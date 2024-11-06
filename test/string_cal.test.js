@@ -56,3 +56,14 @@ describe("5: Negative numbers", () => {
         expect(() => { add("1,2,3"); }).not.toThrow();
     });
 });
+
+// TDD KATA-1 Assement Test Cases
+
+describe("6: Numbers bigger than 1000 should be ignored",()=>{
+    test("add('1001,2') should return 2",()=>{
+        expect(add("1001,2")).toBe(2);
+    });
+    test("add('1000,2') should return 1002",()=>{
+        expect(add("1000,2")).toBe(1002);
+    });
+});
