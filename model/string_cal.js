@@ -17,18 +17,23 @@ function num_add(numbers){
 function add(str){
     if(str==="") return 0;
     else if(str.length==1) return parseInt(str);
-    else if(str[0]==='/' && str[1]==='/'){
-        let delimiter="";
-        let i=3;
-        if(str[2]==='['){
-            while(str[i]!==']'){
-                delimiter+=str[i];
-                i++;
+    else if(str.startsWith("//")){
+        let delimiter=[];
+        let i=2;
+        if(str[i]==='['){
+            while(str[i]==='['){
+                let end=str.indexOf("]",i);
+                delimiter.push(str.substring(i+1,end));
+                i=end+1;
             }
         }
-        else delimiter=str[2];
+        else{
+            delimiter.push(str[i]);
+            i++
+        }
         str=str.substring(i+1);
-        let numbers=str.split(delimiter);
+        let delimiterRegex=new RegExp(delimiter.map(d=>d.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')).join("|"));
+        let numbers=str.split(delimiterRegex);
         return num_add(numbers);
     }
     else{
